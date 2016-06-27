@@ -1,0 +1,37 @@
+public class Room{
+    private int room_id;
+    private String room_name;
+    private int rm_game_id;
+    private int host_id;
+    private char max_players;
+    private char count_players;
+    private boolean isFull;
+    private boolean isPrivate;
+    private String room_pw;
+    private String player_id_list;
+
+    public Room(int total_rooms,String name,int game,int host){
+	this.room_id=total_rooms; //increment counter;
+	this.room_name=name;
+	this.rm_game_id=game;
+	this.host_id=host;
+	//max players defined by game
+	this.count_players=1;
+	this.isFull=false;
+	this.isPrivate=false;
+	this.room_pw="";
+	this.player_id_list="";
+    }
+    
+    public Room(int total_rooms,String name,int game,int host,String pass){
+	this.room_id=total_rooms; //increment counter;
+	this.room_name=name;
+	this.rm_game_id=game;
+	this.host_id=host;
+	//max players defined by game
+	this.count_players=1;
+	this.isFull=false;
+	this.isPrivate=true;
+	this.room_pw=pass;
+	this.player_id_list="";
+    }

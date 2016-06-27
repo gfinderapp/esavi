@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gfind.esavi.main_screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/startup_img" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="esavi"
+            android:id="@+id/textView"
+            android:textSize="100dp"
+            android:textColor="#7b564c"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/button"
+            android:background="#00000000"
+            android:textSize="45dp"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:onClick="Start"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="exit"
+            android:id="@+id/button2"
+            android:textSize="45dp"
+            android:background="#00000000"
+            android:layout_marginBottom="78dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="exit"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="I"
+            android:id="@+id/button3"
+            android:background="#00000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:onClick="Info"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="*"
+            android:id="@+id/button4"
+            android:background="#00000000"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:onClick="credits"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Search"
+            android:id="@+id/button5"
+            android:background="#00000000"
+            android:textSize="45dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:onClick="Search"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create room"
+            android:id="@+id/button6"
+            android:background="#00000000"
+            android:textSize="45dp"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:onClick="create"/>
+
+    </RelativeLayout>
+</LinearLayout>
